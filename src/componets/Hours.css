@@ -1,0 +1,161 @@
+.hours-section {
+  padding: 80px 10%;
+  background: #faf7f2;
+}
+
+.hours-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.sub-title {
+  color: #c57a56;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hours-left h2,
+.hours-right h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+
+.hours-table {
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row span:last-child {
+  color: #d46c38;
+  font-weight: 600;
+}
+
+.hours-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.call-btn,
+.whatsapp-btn {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.call-btn {
+  background: #2e1b12;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}
+
+.hours-right iframe {
+  width: 100%;
+  height: 390px;
+  border: none;
+}
+
+.address {
+  margin-top: 15px;
+  color: #a36b4f;
+}
+
+@media (max-width: 768px) {
+  .hours-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hours-left h2,
+  .hours-right h2 {
+    font-size: 38px;
+  }
+
+  .hours-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .hours-section {
+      display: flex;
+    z-index: 1000;
+    padding: 50px 20px;
+
+  }
+
+  .hours-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hours-left h2,
+  .hours-right h2 {
+    font-size: 2.5rem;
+  }
+
+  .row {
+    padding: 18px 15px;
+    font-size: 14px;
+  }
+
+  .hours-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .call-btn,
+  .whatsapp-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .hours-right iframe {
+    height: 300px;
+  }
+
+  .address {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sub-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .hours-left h2,
+  .hours-right h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .hours-right iframe {
+    height: 250px;
+  }
+}

@@ -1,0 +1,142 @@
+.contact-section {
+  padding: 80px 10%;
+  background: #f8efe4;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.subtitle {
+  color: #c96c36;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.contact-info h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-family: serif;
+}
+
+.contact-info h2 span {
+  font-style: italic;
+}
+
+.description {
+  max-width: 500px;
+  line-height: 1.8;
+  color: #6d6d6d;
+  margin-bottom: 40px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+}
+
+.whatsapp-btn,
+.call-btn {
+  width: fit-content;
+  padding: 16px 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}
+
+.call-btn {
+  background: #3b2217;
+}
+
+.contact-form-box {
+  background: white;
+  padding: 40px;
+}
+
+.contact-form-box h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-family: serif;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-form-box button {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background: #3b2217;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info h2 {
+    font-size: 2.8rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .whatsapp-btn,
+  .call-btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .contact-form-box {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-info h2 {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
