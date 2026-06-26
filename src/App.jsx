@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import Home from './componets/home'
+import Home from './componets/Home'
 import Menu from './componets/Menu'
 import Hours from './componets/Hours'
 import Contact from './componets/Contact'
