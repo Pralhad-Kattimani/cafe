@@ -5,6 +5,7 @@ import Menu from './componets/Menu'
 import Hours from './componets/Hours'
 import Contact from './componets/Contact'
 import Navbar from './componets/Navbar'
+import Footer from './componets/Footer'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
      <Hours />
      <Contact />
      <Navbar />
+     <Footer />
 
     </>
   )

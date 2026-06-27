@@ -1,0 +1,182 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #dddddd;
+  padding: 60px 0 20px 0;
+  font-family: sans-serif;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-col h2 {
+  color: #ff9f43; /* Accent color for your cafe theme */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+/* Subtle underline for titles */
+.footer-col h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #ff9f43;
+  width: 40px;
+  height: 2px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  color: #dddddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ff9f43;
+}
+
+.footer-col ul li span {
+  display: block;
+  color: #b0b0b0;
+  margin-top: 4px;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+  font-size: 13px;
+  color: #888888;
+}
+
+/* Official X Branding Theme */
+/* Layout tray to hold the icons side-by-side */
+.social-icon-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+/* Common sizing and shape layout for all icon circles */
+.insta-icon-only, .fb-icon-only, .x-icon-only {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Smooth rounded corners */
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #ffffff; /* Icon vector inherits this white color */
+}
+
+/* Instagram specific colors */
+.insta-icon-only {
+  background-color: #e1306c;
+  border: 1px solid #c13584;
+}
+.insta-icon-only:hover {
+  background-color: #d6225c;
+  border-color: #ff9f43; /* Changes border to your theme accent */
+  transform: translateY(-3px);
+}
+
+/* Facebook specific colors */
+.fb-icon-only {
+  background-color: #1877f2;
+  border: 1px solid #166fe5;
+}
+.fb-icon-only:hover {
+  background-color: #1464cc;
+  border-color: #ff9f43;
+  transform: translateY(-3px);
+}
+
+/* X specific colors */
+.x-icon-only {
+  background-color: #000000;
+  border: 1px solid #333333;
+}
+.x-icon-only:hover {
+  background-color: #141414;
+  border-color: #ff9f43;
+  transform: translateY(-3px);
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px 0; /* Snugger padding for compact screens */
+  }
+.social-icon-row {
+    justify-content: center;
+    margin: 20px auto 0 auto;
+  }
+  .footer-container {
+    /* Switches columns to a single clean stack on small screens */
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    text-align: center; /* Centers all layout items nicely on phones */
+  }
+
+  .footer-col h3::after {
+    /* Centers the orange underline under the titles when text centers */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-links {
+    justify-content: center; /* Centers the icon tray */
+  }
+
+  .footer-bottom {
+    margin-top: 35px;
+    padding: 20px 10px 0 10px;
+  }
+}
