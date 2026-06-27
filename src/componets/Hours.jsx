@@ -48,12 +48,12 @@ function Hours() {
           <p className="sub-title">FIND US</p>
           <h2>Location</h2>
 
-          <iframe
-            title="Cafe Location"
-            src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+       <iframe
+  title="Cafe Location"
+  src="https://maps.google.com/maps?q=pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+  allowFullScreen
+  loading="lazy"
+></iframe>
 
           <p className="address">
             📍 FC Road, Pune, Maharashtra
